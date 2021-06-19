@@ -8,13 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ManageFiles
+namespace ManageFiles.View
 {
-    public partial class Form1 : Form
+    public partial class WarnForm : Form
     {
-        public Form1()
+        public WarnForm(string str)
         {
             InitializeComponent();
+            this.label1.Text = str;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
